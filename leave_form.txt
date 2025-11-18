@@ -1,0 +1,14 @@
+Military Leave Request Form
+
+Full Name:
+Service ID:
+Rank:
+Commanding Officer:
+Type of Leave (Emergency/Scheduled):
+Start Date:
+End Date:
+Reason / Justification:
+Attachments: (list)
+
+Signature:
+Date:
