@@ -1,134 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Military Downloads Portal</title>
+    <title>Military Downloads | Official Forms & Documents</title>
 
     <style>
+        /* ========== GENERAL PAGE STYLE ========== */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0e1a2b;
-            color: white;
+            font-family: "Segoe UI", sans-serif;
+            background: #0b0f17;
+            color: #e2e8f0;
         }
 
+        /* ========== HEADER ========== */
         header {
-            background: #0b1320;
-            padding: 20px;
+            background: linear-gradient(90deg, #1e293b, #0f172a);
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 2px solid #1f3557;
+            border-bottom: 4px solid #3b82f6;
         }
-
-        h1 {
+        header h1 {
+            font-size: 34px;
             margin: 0;
-            font-size: 32px;
-            letter-spacing: 1px;
+            color: #93c5fd;
+        }
+        header p {
+            margin-top: 10px;
+            color: #cbd5e1;
+            font-size: 16px;
         }
 
+        /* ========== CONTAINER ========== */
         .container {
-            padding: 25px;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
+            padding: 25px;
         }
 
+        /* ========== SECTION TITLES ========== */
         h2 {
-            margin-top: 40px;
-            border-left: 6px solid #1d4ed8;
-            padding-left: 10px;
+            margin-top: 50px;
+            color: #60a5fa;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+            font-size: 22px;
         }
 
-        .download-btn {
-            display: block;
-            width: fit-content;
+        /* ========== DOWNLOAD CARD ========== */
+        .download-item {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+        }
+        .download-item:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 0 18px rgba(0,0,0,0.4);
+        }
+        .download-item strong {
+            font-size: 18px;
+            color: #f1f5f9;
+        }
+        .download-item p {
+            margin: 10px 0;
+            color: #94a3b8;
+        }
+
+        /* ========== DOWNLOAD BUTTON ========== */
+        .download-item a {
+            display: inline-block;
+            padding: 10px 18px;
             background: #1d4ed8;
-            color: white;
-            padding: 12px 20px;
+            color: #ffffff;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            margin-bottom: 12px;
             transition: 0.2s;
         }
-
-        .download-btn:hover {
-            background: #255ce4;
-            transform: scale(1.03);
+        .download-item a:hover {
+            background: #2563eb;
         }
 
+        /* ========== FOOTER ========== */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             margin-top: 40px;
-            background: #0b1320;
-            border-top: 2px solid #1f3557;
+            background: #0f172a;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+
+        /* ========== BADGE AREA ========== */
+        .badge-box {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e293b;
+            border: 2px solid #3b82f6;
+            border-radius: 50px;
+            color: #93c5fd;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(59,130,246,0.3);
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Military Download Center</h1>
-        <p>Official Documents • Forms • Requests • Applications</p>
-    </header>
 
-    <div class="container">
+<header>
+    <h1>📄 Official Military Downloads Center</h1>
+    <p>Access verified, secure, and authorized military documents.</p>
+</header>
 
-        <h2>📄 Leave & Deployment Forms</h2>
+<div class="container">
 
-        <a href="downloads/leave-form.pdf" download class="download-btn">
-            ⬇️ Military Leave Request Form (PDF)
-        </a>
-
-        <a href="downloads/redeployment-request.pdf" download class="download-btn">
-            ⬇️ Redeployment / Return Form
-        </a>
-
-        <a href="downloads/emergency-leave.docx" download class="download-btn">
-            ⬇️ Emergency Leave Authorization (DOCX)
-        </a>
-
-        <!-- ============================================================ -->
-
-        <h2>🎖 Charity & Welfare Support Documents</h2>
-
-        <a href="downloads/charity-application.pdf" download class="download-btn">
-            ⬇️ Military Charity Support Application
-        </a>
-
-        <a href="downloads/sponsorship-request.pdf" download class="download-btn">
-            ⬇️ Soldier Sponsorship Request Form
-        </a>
-
-        <!-- ============================================================ -->
-
-        <h2>💰 Funding & Operational Support</h2>
-
-        <a href="downloads/funding-support.docx" download class="download-btn">
-            ⬇️ Operational Funding Request (DOCX)
-        </a>
-
-        <a href="downloads/logistics-support.pdf" download class="download-btn">
-            ⬇️ Logistics & Equipment Support Form
-        </a>
-
-        <!-- ============================================================ -->
-
-        <h2>📝 General Military Documents</h2>
-
-        <a href="downloads/id-verification.pdf" download class="download-btn">
-            ⬇️ Identity Verification Document
-        </a>
-
-        <a href="downloads/military-guidelines.pdf" download class="download-btn">
-            ⬇️ Military Policy Guidelines (PDF)
-        </a>
-
+    <div class="badge-box">
+        <span class="badge">MIL-CERT DOCUMENTS</span>
     </div>
 
-    <footer>
-        © 2025 Military Information Portal — All Rights Reserved
-    </footer>
+    <h2>📘 Military Leave Forms</h2>
+
+    <div class="download-item">
+        <strong>Military Leave Request Form (PDF)</strong>
+        <p>Required for all service members requesting temporary or emergency leave.</p>
+        <a href="downloads/leave-form.pdf" download>⬇ Download Form</a>
+    </div>
+
+    <div class="download-item">
+        <strong>Emergency Family Leave Form</strong>
+        <p>For urgent family travel, emergencies, or compassionate leave situations.</p>
+        <a href="downloads/emergency-leave.pdf" download>⬇ Download Form</a>
+    </div>
+
+    <h2>🎖 Charity & Service Support Forms</h2>
+
+    <div class="download-item">
+        <strong>Military Charity Assistance Form</strong>
+        <p>Used for requesting hardship aid, financial support, or dependent assistance.</p>
+        <a href="downloads/charity-application.pdf" download>⬇ Download Application</a>
+    </div>
+
+    <div class="download-item">
+        <strong>Veteran Relief Support Form</strong>
+        <p>For veterans requesting urgent relief including medical, housing, or travel aid.</p>
+        <a href="downloads/veteran-relief.pdf" download>⬇ Download Support Form</a>
+    </div>
+
+    <h2>💼 Operational & Funding Documents</h2>
+
+    <div class="download-item">
+        <strong>Operational Funding Request (DOCX)</strong>
+        <p>Submit funding requests for mission-related expenses and equipment needs.</p>
+        <a href="downloads/funding-support.docx" download>⬇ Download Funding Form</a>
+    </div>
+
+    <div class="download-item">
+        <strong>Deployment Reimbursement Form</strong>
+        <p>Used for claiming deployment-related expenses, relocations, or mission travel.</p>
+        <a href="downloads/deployment-reimbursement.pdf" download>⬇ Download Reimbursement</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Military Information Portal — Secure Access Division
+</footer>
+
 </body>
 </html>
